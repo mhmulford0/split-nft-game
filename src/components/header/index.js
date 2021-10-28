@@ -138,6 +138,7 @@ const Header = ({ currentAccount }) => {
     setProvider(null);
     setAddress("");
     setBalance(0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [web3ModalMainnet]);
 
   const onProviderSelected = useCallback((_provider) => {
